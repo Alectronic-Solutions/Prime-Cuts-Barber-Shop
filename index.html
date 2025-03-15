@@ -1,281 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prime Cuts Barber Shop</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="images/logo.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Cuts Barber Shop</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Scroll Progress Bar -->
-  <div class="scroll-progress"></div>
-
-  <!-- Header -->
-  <header>
-    <div class="logo-container">
-      <img src="images/logo.png" alt="Prime Cuts Logo" class="logo">
-      <div class="header-title">Prime Cuts Barber Shop</div>
-    </div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#team">Our Team</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="hamburger" aria-label="Toggle navigation">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <video autoplay muted loop playsinline>
-      <source src="videos/hero-background.mp4" type="video/mp4">
-      <img src="images/hero-fallback.jpg" alt="Hero Background">
-    </video>
-    <div class="hero-content">
-      <h2>Welcome to Prime Cuts</h2>
-      <p>Your go-to place for the best haircuts in town!</p>
-      <button class="cta-button" id="book-appointment">Book an Appointment</button>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Us</h2>
-    <p>At Prime Cuts Barber Shop, we pride ourselves on providing top-notch grooming services with a touch of class. Our experienced barbers are dedicated to making you look and feel your best.</p>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="services">
-    <h2>Our Services</h2>
-    <div class="services-grid">
-      <div class="service-card">
-        <h3>Haircut & Styling</h3>
-        <p>Professional haircuts tailored to your style.</p>
-        <p class="price">$30</p>
-      </div>
-      <div class="service-card">
-        <h3>Beard Trim & Shave</h3>
-        <p>Precision beard grooming for a sharp look.</p>
-        <p class="price">$20</p>
-      </div>
-      <div class="service-card">
-        <h3>Hot Towel Treatment</h3>
-        <p>Relaxing hot towel treatment for ultimate comfort.</p>
-        <p class="price">$15</p>
-      </div>
-      <div class="service-card">
-        <h3>Facials</h3>
-        <p>Revitalizing facials for glowing skin.</p>
-        <p class="price">$25</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials Section -->
-  <section id="testimonials" class="testimonials">
-    <h2>Testimonials</h2>
-    <div class="testimonials-carousel">
-      <div class="testimonial-card active">
-        <p>"The best barber shop in town! Highly recommend their services."</p>
-        <h3>- John Doe</h3>
-      </div>
-      <div class="testimonial-card">
-        <p>"Amazing experience! The barbers are true professionals."</p>
-        <h3>- Jane Smith</h3>
-      </div>
-      <div class="testimonial-card">
-        <p>"I always leave feeling like a million bucks. 10/10!"</p>
-        <h3>- Mike Johnson</h3>
-      </div>
-    </div>
-  </section>
-
-  <!-- Team Section -->
-  <section id="team" class="team">
-    <h2>Our Team</h2>
-    <div class="team-grid">
-      <div class="team-member">
-        <img src="images/barber1.jpg" alt="Barber 1">
-        <h3>John Doe</h3>
-        <p>Master Barber</p>
-      </div>
-      <div class="team-member">
-        <img src="images/barber2.jpg" alt="Barber 2">
-        <h3>Jane Smith</h3>
-        <p>Beard Specialist</p>
-      </div>
-      <div class="team-member">
-        <img src="images/barber3.jpg" alt="Barber 3">
-        <h3>Mike Johnson</h3>
-        <p>Styling Expert</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Gallery Section -->
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <img src="images/gallery1.jpg" alt="Barber Shop Image 1">
-      <img src="images/gallery2.jpg" alt="Barber Shop Image 2">
-      <img src="images/gallery3.jpg" alt="Barber Shop Image 3">
-      <img src="images/gallery4.jpg" alt="Barber Shop Image 4">
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer-content">
-      <div class="footer-section">
-        <img src="images/logo.png" alt="Prime Cuts Logo" class="footer-logo">
-        <p>Your go-to place for the best haircuts in town!</p>
-      </div>
-      <div class="footer-section">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#team">Our Team</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h3>Contact Us</h3>
-        <p><i class="fas fa-map-marker-alt"></i> 123 Barber St, Haircut City, HC 12345</p>
-        <p><i class="fas fa-phone-alt"></i> (123) 456-7890</p>
-        <p><i class="fas fa-envelope"></i> info@primecuts.com</p>
-      </div>
-      <div class="footer-section">
-        <h3>Follow Us</h3>
-        <div class="social-links">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="Prime Cuts Logo">
+                <span>Prime Cuts Barber Shop</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#appointment">Make Appointment</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <section id="home">
+        <video autoplay muted loop id="hero-background">
+            <source src="videos/hero-background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h1>Welcome to Prime Cuts Barber Shop</h1>
+            <p>Your go-to place for the best haircuts in town!</p>
+            <a href="#appointment" class="btn">Book an Appointment</a>
         </div>
-      </div>
+    </section>
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <h3>Haircut</h3>
+                <p>Professional haircuts for men and boys.</p>
+                <p class="price">$30</p>
+                <button class="learn-more" data-service="haircut">Learn More</button>
+            </div>
+            <div class="service-card">
+                <h3>Shave</h3>
+                <p>Clean and precise shaving services.</p>
+                <p class="price">$20</p>
+                <button class="learn-more" data-service="shave">Learn More</button>
+            </div>
+            <div class="service-card">
+                <h3>Beard Trim</h3>
+                <p>Expert beard trimming and styling.</p>
+                <p class="price">$15</p>
+                <button class="learn-more" data-service="beard">Learn More</button>
+            </div>
+        </div>
+
+        <!-- Service Modals -->
+        <div class="modal" id="haircut-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>Professional Haircut</h3>
+                <p>Our expert barbers provide precision haircuts tailored to your style. Includes:</p>
+                <ul>
+                    <li>Consultation to understand your desired style</li>
+                    <li>Shampooing and conditioning</li>
+                    <li>Precision cutting and styling</li>
+                    <li>Hot towel finish</li>
+                </ul>
+                <p class="modal-price">$30</p>
+                <a href="#appointment" class="book-now">Book Appointment</a>
+            </div>
+        </div>
+
+        <div class="modal" id="shave-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>Classic Shave</h3>
+                <p>Experience our luxurious traditional straight razor shave. Includes:</p>
+                <ul>
+                    <li>Pre-shave oil treatment</li>
+                    <li>Hot towel preparation</li>
+                    <li>Precision straight razor shave</li>
+                    <li>After-shave balm</li>
+                </ul>
+                <p class="modal-price">$20</p>
+                <a href="#appointment" class="book-now">Book Appointment</a>
+            </div>
+        </div>
+
+        <div class="modal" id="beard-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>Beard Trimming</h3>
+                <p>Get your beard shaped and styled to perfection. Includes:</p>
+                <ul>
+                    <li>Beard washing and conditioning</li>
+                    <li>Shape consultation</li>
+                    <li>Precision trimming</li>
+                    <li>Beard oil treatment</li>
+                </ul>
+                <p class="modal-price">$15</p>
+                <a href="#appointment" class="book-now">Book Appointment</a>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <p>Prime Cuts Barber Shop has been serving the community with top-notch grooming services for over a decade. Our team of experienced barbers is dedicated to providing you with the best haircut, shave, and beard trim experience. We pride ourselves on our attention to detail and commitment to customer satisfaction.</p>
+            <p>At Prime Cuts, we believe that a great haircut is more than just a style – it's a statement. Our barbers are skilled in the latest techniques and trends, ensuring that you leave our shop looking and feeling your best. Whether you're looking for a classic cut or a modern style, we've got you covered.</p>
+            <p>Our shop is designed with your comfort in mind. From the moment you walk in, you'll be greeted with a warm and welcoming atmosphere. Relax in our comfortable chairs, enjoy a complimentary beverage, and let our barbers work their magic. We use only the highest quality products to ensure that your hair and skin are treated with the utmost care.</p>
+            <p>Come visit us at Prime Cuts Barber Shop and experience the difference. We look forward to serving you!</p>
+        </div>
+    </section>
+    <section id="reviews">
+        <h2>Our Client Reviews</h2>
+        <div class="reviews-carousel">
+            <div class="review-card active">
+                <div class="review-content">
+                    <div class="quote-icon">"</div>
+                    <p>Exceptional service! Best haircut I've ever had. The attention to detail is amazing.</p>
+                    <span class="author">- John Doe</span>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-content">
+                    <div class="quote-icon">"</div>
+                    <p>Professional and friendly atmosphere. These guys know their craft. Highly recommended!</p>
+                    <span class="author">- Mike Smith</span>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-content">
+                    <div class="quote-icon">"</div>
+                    <p>Found my go-to barbershop. Clean, professional, and always consistent quality.</p>
+                    <span class="author">- David Wilson</span>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-content">
+                    <div class="quote-icon">"</div>
+                    <p>Great experience every time. The staff is friendly and the results are always perfect.</p>
+                    <span class="author">- James Rodriguez</span>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-content">
+                    <div class="quote-icon">"</div>
+                    <p>Best beard trim in town! These guys are true professionals. Worth every penny.</p>
+                    <span class="author">- Robert Thompson</span>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="team">
+        <h2>Meet Our Expert Barbers</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="images/barber1.jpg" alt="Barber 1">
+                <h3>John Smith</h3>
+                <p class="position">Master Barber</p>
+                <p class="experience">15+ Years Experience</p>
+            </div>
+            <div class="team-member">
+                <img src="images/barber2.jpg" alt="Barber 2">
+                <h3>David Johnson</h3>
+                <p class="position">Senior Barber</p>
+                <p class="experience">10+ Years Experience</p>
+            </div>
+            <div class="team-member">
+                <img src="images/barber3.jpg" alt="Barber 3">
+                <h3>Michael Rodriguez</h3>
+                <p class="position">Style Specialist</p>
+                <p class="experience">8+ Years Experience</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="images/gallery1.jpg" alt="Gallery Image 1">
+            <img src="images/gallery2.jpg" alt="Gallery Image 2">
+            <img src="images/gallery3.jpg" alt="Gallery Image 3">
+            <img src="images/gallery4.jpg" alt="Gallery Image 4">
+        </div>
+    </section>
+
+    <section id="appointment">
+        <h2>Make Appointment</h2>
+        <form class="appointment-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <input type="date" required>
+            <select required>
+                <option value="">Select Service</option>
+                <option value="haircut">Haircut</option>
+                <option value="shave">Shave</option>
+                <option value="beard">Beard Trim</option>
+            </select>
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="images/logo.png" alt="Prime Cuts Logo" class="footer-logo">
+                <p>Your go-to place for the best haircuts in town!</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#reviews">Testimonials</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <div class="contact-info">
+                    <p><i class="fa-solid fa-location-dot"></i> 123 Barber St, Haircut City, HC 12345</p>
+                    <p><i class="fa-solid fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@primecuts.com</p>
+                </div>
+            </div>
+
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-info">
+                <p>&copy; 2023 Prime Cuts Barber Shop. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="javascript:void(0)" class="privacy-link">Privacy Policy</a> |
+                    <a href="javascript:void(0)" class="terms-link">Terms of Service</a>
+                </div>
+            </div>
+            <div class="footer-credit">
+                <p>Website by <a href="https://www.alectronicsolutions.com" target="_blank">Alectronic Solutions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Policy Modals -->
+    <div class="modal policy-modal" id="privacy-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Privacy Policy</h3>
+            <div class="policy-content">
+                <h4>Information Collection</h4>
+                <p>We collect information when you book appointments, contact us, or use our services.</p>
+                
+                <h4>Information Use</h4>
+                <p>Your information helps us provide and improve our services, process appointments, and communicate with you.</p>
+                
+                <h4>Data Protection</h4>
+                <p>We implement security measures to protect your personal information from unauthorized access.</p>
+                
+                <h4>Contact Information</h4>
+                <p>For privacy concerns, contact us at info@primecuts.com</p>
+            </div>
+        </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2023 Prime Cuts Barber Shop. All rights reserved.</p>
-      <div class="legal-links">
-        <a href="privacy-terms.html">Privacy Policy</a> | 
-        <a href="privacy-terms.html">Terms of Service</a>
-      </div>
-      <p>Website by <a href="https://alectronic-solutions.github.io/" target="_blank" style="color: var(--primary-white);">Alectronic Solutions</a></p>
+
+    <div class="modal policy-modal" id="terms-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Terms of Service</h3>
+            <div class="policy-content">
+                <h4>Service Agreement</h4>
+                <p>By using our services, you agree to these terms and conditions.</p>
+                
+                <h4>Appointment Policy</h4>
+                <p>Please arrive 5 minutes before your scheduled time. Late arrivals may result in shortened service.</p>
+                
+                <h4>Cancellation Policy</h4>
+                <p>24-hour notice required for cancellations. Late cancellations may incur a fee.</p>
+                
+                <h4>Service Guarantee</h4>
+                <p>We strive to provide the highest quality service to ensure your satisfaction.</p>
+            </div>
+        </div>
     </div>
-  </footer>
 
-  <!-- Dark Mode Toggle -->
-  <button class="dark-mode-toggle" aria-label="Toggle Dark Mode">🌙</button>
-
-  <!-- Back to Top Button -->
-  <button class="back-to-top" aria-label="Back to Top">↑</button>
-
-  <script src="scripts.js"></script>
-  <script>
-    // Dark Mode Toggle
-    const darkModeToggle = document.querySelector('.dark-mode-toggle');
-    const body = document.body;
-
-    darkModeToggle.addEventListener('click', () => {
-      body.classList.toggle('dark-mode');
-      darkModeToggle.textContent = body.classList.contains('dark-mode') ? '☀️' : '🌙';
-    });
-
-    // Back to Top Button
-    const backToTopButton = document.querySelector('.back-to-top');
-
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 300) {
-        backToTopButton.style.display = 'block';
-      } else {
-        backToTopButton.style.display = 'none';
-      }
-    });
-
-    backToTopButton.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    // Testimonials Carousel
-    const testimonials = document.querySelectorAll('.testimonial-card');
-    let currentTestimonial = 0;
-
-    function showTestimonial(index) {
-      testimonials.forEach((testimonial, i) => {
-        testimonial.classList.toggle('active', i === index);
-      });
-    }
-
-    function nextTestimonial() {
-      currentTestimonial = (currentTestimonial + 1) % testimonials.length;
-      showTestimonial(currentTestimonial);
-    }
-
-    setInterval(nextTestimonial, 5000); // Change testimonial every 5 seconds
-
-    // Hamburger Menu
-    const hamburger = document.querySelector('.hamburger');
-    const nav = document.querySelector('nav');
-
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('active');
-      nav.classList.toggle('active');
-    });
-
-    // Smooth Scrolling for Navigation Links
-    document.querySelectorAll('nav a').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-        nav.classList.remove('active'); // Close hamburger menu after clicking a link
-        hamburger.classList.remove('active');
-      });
-    });
-
-    // Book Appointment Button
-    const bookAppointmentButton = document.getElementById('book-appointment');
-    bookAppointmentButton.addEventListener('click', () => {
-      document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
-    });
-
-    // Debugging: Check if video and image are loaded correctly
-    document.querySelector('video').addEventListener('error', (e) => {
-      console.error('Video failed to load:', e);
-    });
-
-    document.querySelector('video source').addEventListener('error', (e) => {
-      console.error('Video source failed to load:', e);
-    });
-
-    document.querySelector('video img').addEventListener('error', (e) => {
-      console.error('Fallback image failed to load:', e);
-    });
-  </script>
+    <!-- Update Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="script.js"></script>
 </body>
 </html>
