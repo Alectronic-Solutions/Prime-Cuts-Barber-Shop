@@ -130,4 +130,44 @@ document.addEventListener('DOMContentLoaded', () => {
         
         lastScroll = currentScroll;
     });
+
+    // Back to top functionality
+    const backToTopButton = document.getElementById('back-to-top');
+    
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            backToTopButton.classList.add('visible');
+        } else {
+            backToTopButton.classList.remove('visible');
+        }
+    });
+
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    // Dark mode functionality
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+    const darkMode = localStorage.getItem('darkMode');
+
+    if (darkMode === 'enabled') {
+        body.classList.add('dark-mode');
+        darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+
+    darkModeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        
+        if (body.classList.contains('dark-mode')) {
+            localStorage.setItem('darkMode', 'enabled');
+            darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        } else {
+            localStorage.setItem('darkMode', null);
+            darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+        }
+    });
 });

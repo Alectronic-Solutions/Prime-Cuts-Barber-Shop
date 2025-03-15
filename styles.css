@@ -918,3 +918,108 @@ footer {
     line-height: 1.6;
     font-size: 16px;
 }
+
+/* Back to top and dark mode buttons */
+#back-to-top, #dark-mode-toggle {
+    position: fixed;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+#back-to-top {
+    bottom: 30px;
+    right: 30px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+#dark-mode-toggle {
+    bottom: 30px;
+    left: 30px;
+}
+
+#back-to-top:hover, #dark-mode-toggle:hover {
+    background: #555;
+    transform: translateY(-3px);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.dark-mode header,
+.dark-mode footer {
+    background: #000;
+}
+
+.dark-mode .service-card,
+.dark-mode .team-member,
+.dark-mode .modal-content {
+    background: #333;
+    color: #fff;
+}
+
+.dark-mode .service-card h3,
+.dark-mode .team-member h3,
+.dark-mode .modal-content h3 {
+    color: #fff;
+}
+
+.dark-mode .service-card p,
+.dark-mode .team-member p,
+.dark-mode .modal-content p {
+    color: #ccc;
+}
+
+.dark-mode #services,
+.dark-mode #about,
+.dark-mode #reviews {
+    background: #1a1a1a;
+}
+
+.dark-mode .review-card p {
+    color: #fff;
+}
+
+.dark-mode .appointment-form input,
+.dark-mode .appointment-form select {
+    background: #333;
+    color: #fff;
+    border-color: #444;
+}
+
+.dark-mode .appointment-form input::placeholder {
+    color: #ccc;
+}
+
+.dark-mode .about-content p {
+    color: #fff;
+}
+
+.dark-mode .modal-content h3,
+.dark-mode .modal-content .modal-price {
+    color: #fff;
+}
+
+.dark-mode .modal-content p,
+.dark-mode .modal-content li {
+    color: #ccc;
+}
+
+.dark-mode .close-modal {
+    color: #fff;
+}
