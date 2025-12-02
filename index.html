@@ -3,323 +3,1312 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prime Cuts Barber Shop</title>
-    <link rel="icon" type="image/png" href="images/logo.png">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="images/logo.png" alt="Prime Cuts Logo">
-                <span>Prime Cuts Barber Shop</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#appointment">Make Appointment</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
-    </header>
-    <section id="home">
-        <video autoplay muted loop id="hero-background">
-            <source src="videos/hero-background.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="hero-content">
-            <h1>Welcome to Prime Cuts Barber Shop</h1>
-            <p>Your go-to place for the best haircuts in town!</p>
-            <a href="#appointment" class="btn">Book an Appointment</a>
-        </div>
-    </section>
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="services-container">
-            <div class="service-card">
-                <h3>Haircut</h3>
-                <p>Professional haircuts for men and boys.</p>
-                <p class="price">$30</p>
-                <button class="learn-more" data-service="haircut">Learn More</button>
-            </div>
-            <div class="service-card">
-                <h3>Shave</h3>
-                <p>Clean and precise shaving services.</p>
-                <p class="price">$20</p>
-                <button class="learn-more" data-service="shave">Learn More</button>
-            </div>
-            <div class="service-card">
-                <h3>Beard Trim</h3>
-                <p>Expert beard trimming and styling.</p>
-                <p class="price">$15</p>
-                <button class="learn-more" data-service="beard">Learn More</button>
-            </div>
-        </div>
+    <meta name="description" content="Prime Cuts Barbershop - Premium grooming services. Book your appointment today for the best fade, shave, and style in town.">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://primecutsbarber.com/">
+    <meta property="og:title" content="Prime Cuts Barbershop | Premium Grooming">
+    <meta property="og:description" content="Expert cuts and shaves. Book your appointment now.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=1200&auto=format&fit=crop">
 
-        <!-- Service Modals -->
-        <div class="modal" id="haircut-modal">
-            <div class="modal-content">
-                <span class="close-modal">&times;</span>
-                <h3>Professional Haircut</h3>
-                <p>Our expert barbers provide precision haircuts tailored to your style. Includes:</p>
-                <ul>
-                    <li>Consultation to understand your desired style</li>
-                    <li>Shampooing and conditioning</li>
-                    <li>Precision cutting and styling</li>
-                    <li>Hot towel finish</li>
-                </ul>
-                <p class="modal-price">$30</p>
-                <a href="#appointment" class="book-now">Book Appointment</a>
-            </div>
-        </div>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="portfolio-16.png">
 
-        <div class="modal" id="shave-modal">
-            <div class="modal-content">
-                <span class="close-modal">&times;</span>
-                <h3>Classic Shave</h3>
-                <p>Experience our luxurious traditional straight razor shave. Includes:</p>
-                <ul>
-                    <li>Pre-shave oil treatment</li>
-                    <li>Hot towel preparation</li>
-                    <li>Precision straight razor shave</li>
-                    <li>After-shave balm</li>
-                </ul>
-                <p class="modal-price">$20</p>
-                <a href="#appointment" class="book-now">Book Appointment</a>
-            </div>
-        </div>
+    <title>Prime Cuts Barbershop | Book Now</title>
 
-        <div class="modal" id="beard-modal">
-            <div class="modal-content">
-                <span class="close-modal">&times;</span>
-                <h3>Beard Trimming</h3>
-                <p>Get your beard shaped and styled to perfection. Includes:</p>
-                <ul>
-                    <li>Beard washing and conditioning</li>
-                    <li>Shape consultation</li>
-                    <li>Precision trimming</li>
-                    <li>Beard oil treatment</li>
-                </ul>
-                <p class="modal-price">$15</p>
-                <a href="#appointment" class="book-now">Book Appointment</a>
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <h2>About Us</h2>
-        <div class="about-content">
-            <p>Prime Cuts Barber Shop has been serving the community with top-notch grooming services for over a decade. Our team of experienced barbers is dedicated to providing you with the best haircut, shave, and beard trim experience. We pride ourselves on our attention to detail and commitment to customer satisfaction.</p>
-            <p>At Prime Cuts, we believe that a great haircut is more than just a style – it's a statement. Our barbers are skilled in the latest techniques and trends, ensuring that you leave our shop looking and feeling your best. Whether you're looking for a classic cut or a modern style, we've got you covered.</p>
-            <p>Our shop is designed with your comfort in mind. From the moment you walk in, you'll be greeted with a warm and welcoming atmosphere. Relax in our comfortable chairs, enjoy a complimentary beverage, and let our barbers work their magic. We use only the highest quality products to ensure that your hair and skin are treated with the utmost care.</p>
-            <p>Come visit us at Prime Cuts Barber Shop and experience the difference. We look forward to serving you!</p>
-        </div>
-    </section>
-    <section id="reviews">
-        <h2>Our Client Reviews</h2>
-        <div class="reviews-carousel">
-            <div class="review-card active">
-                <div class="review-content">
-                    <div class="quote-icon">"</div>
-                    <p>Exceptional service! Best haircut I've ever had. The attention to detail is amazing.</p>
-                    <span class="author">- John Doe</span>
-                    <div class="stars">★★★★★</div>
-                </div>
-            </div>
-            <div class="review-card">
-                <div class="review-content">
-                    <div class="quote-icon">"</div>
-                    <p>Professional and friendly atmosphere. These guys know their craft. Highly recommended!</p>
-                    <span class="author">- Mike Smith</span>
-                    <div class="stars">★★★★★</div>
-                </div>
-            </div>
-            <div class="review-card">
-                <div class="review-content">
-                    <div class="quote-icon">"</div>
-                    <p>Found my go-to barbershop. Clean, professional, and always consistent quality.</p>
-                    <span class="author">- David Wilson</span>
-                    <div class="stars">★★★★★</div>
-                </div>
-            </div>
-            <div class="review-card">
-                <div class="review-content">
-                    <div class="quote-icon">"</div>
-                    <p>Great experience every time. The staff is friendly and the results are always perfect.</p>
-                    <span class="author">- James Rodriguez</span>
-                    <div class="stars">★★★★★</div>
-                </div>
-            </div>
-            <div class="review-card">
-                <div class="review-content">
-                    <div class="quote-icon">"</div>
-                    <p>Best beard trim in town! These guys are true professionals. Worth every penny.</p>
-                    <span class="author">- Robert Thompson</span>
-                    <div class="stars">★★★★★</div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="team">
-        <h2>Meet Our Expert Barbers</h2>
-        <div class="team-container">
-            <div class="team-member">
-                <img src="images/barber1.jpg" alt="Barber 1">
-                <h3>John Smith</h3>
-                <p class="position">Master Barber</p>
-                <p class="experience">15+ Years Experience</p>
-            </div>
-            <div class="team-member">
-                <img src="images/barber2.jpg" alt="Barber 2">
-                <h3>David Johnson</h3>
-                <p class="position">Senior Barber</p>
-                <p class="experience">10+ Years Experience</p>
-            </div>
-            <div class="team-member">
-                <img src="images/barber3.jpg" alt="Barber 3">
-                <h3>Michael Rodriguez</h3>
-                <p class="position">Style Specialist</p>
-                <p class="experience">8+ Years Experience</p>
-            </div>
-        </div>
-    </section>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery-grid">
-            <img src="images/gallery1.jpg" alt="Gallery Image 1">
-            <img src="images/gallery2.jpg" alt="Gallery Image 2">
-            <img src="images/gallery3.jpg" alt="Gallery Image 3">
-            <img src="images/gallery4.jpg" alt="Gallery Image 4">
-        </div>
-    </section>
-
-    <section id="appointment">
-        <h2>Make Appointment</h2>
-        <form class="appointment-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <input type="tel" placeholder="Phone Number" required>
-            <input type="date" required>
-            <select required>
-                <option value="">Select Service</option>
-                <option value="haircut">Haircut</option>
-                <option value="shave">Shave</option>
-                <option value="beard">Beard Trim</option>
-            </select>
-            <button type="submit">Book Appointment</button>
-        </form>
-    </section>
-    <!-- Back to top and dark mode buttons -->
-    <button id="back-to-top" title="Back to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-    <button id="dark-mode-toggle" title="Toggle dark mode">
-        <i class="fas fa-moon"></i>
-    </button>
-    <footer>
-        <div class="footer-content">
-            <div class="footer-brand">
-                <img src="images/logo.png" alt="Prime Cuts Logo" class="footer-logo">
-                <p>Your go-to place for the best haircuts in town!</p>
-            </div>
+    <style>
+        /* -----------------------------------------------------------
+           1. CSS VARIABLES & RESET
+           ----------------------------------------------------------- */
+        :root {
+            /* LIGHT MODE (DEFAULT) */
+            --primary: #1a202c;
+            --text-muted: #4a5568;
+            --accent: #2d3748;
+            --accent-light: #e2e8f0;
+            --accent-hover: #000000;
+            --bg-body: #f7fafc;
+            --bg-card: #ffffff;
+            --bg-nav: rgba(255, 255, 255, 0.95);
+            --bg-overlay: rgba(255,255,255,0.85);
+            --border-color: rgba(0,0,0,0.08);
+            --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+            --shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --input-bg: #edf2f7;
             
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#reviews">Testimonials</a></li>
-                    <li><a href="#team">Our Team</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-contact">
-                <h4>Contact Us</h4>
-                <div class="contact-info">
-                    <p><i class="fa-solid fa-location-dot"></i> 123 Barber St, Haircut City, HC 12345</p>
-                    <p><i class="fa-solid fa-phone"></i> (123) 456-7890</p>
-                    <p><i class="fa-solid fa-envelope"></i> info@primecuts.com</p>
-                </div>
-            </div>
+            /* Functional */
+            --nav-height: 60px;
+            --spacing-sm: 1rem;
+            --spacing-md: 2rem;
+            --spacing-lg: 4rem;
+            --border-radius: 4px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
-            <div class="footer-social">
-                <h4>Follow Us</h4>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
-        </div>
+            /* Typography */
+            --font-head: 'Poppins', sans-serif;
+            --font-body: 'Roboto', sans-serif;
+        }
+
+        /* DARK MODE OVERRIDES */
+        body.dark-mode {
+            --primary: #ffffff;
+            --text-muted: #a0aec0;
+            --accent: #a0aec0;
+            --accent-light: #2d3748;
+            --accent-hover: #ffffff;
+            --bg-body: #121212;
+            --bg-card: #1e1e1e;
+            --bg-nav: rgba(18, 18, 18, 0.95);
+            --bg-overlay: rgba(0,0,0,0.75);
+            --border-color: rgba(255,255,255,0.05);
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+            --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+            --input-bg: #121212;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--primary);
+            font-family: var(--font-body);
+            line-height: 1.7;
+            overflow-x: hidden;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Preloader */
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--bg-body);
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
         
-        <div class="footer-bottom">
-            <div class="footer-info">
-                <p>&copy; 2023 Prime Cuts Barber Shop. All rights reserved.</p>
-                <div class="footer-legal">
-                    <a href="javascript:void(0)" class="privacy-link">Privacy Policy</a> |
-                    <a href="javascript:void(0)" class="terms-link">Terms of Service</a>
+        .loader {
+            width: 48px;
+            height: 48px;
+            border: 5px solid var(--primary);
+            border-bottom-color: transparent;
+            border-radius: 50%;
+            display: inline-block;
+            box-sizing: border-box;
+            animation: rotation 1s linear infinite;
+        }
+
+        @keyframes rotation {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: var(--font-head);
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--primary);
+        }
+
+        /* Responsive Text Scaling */
+        h1 { font-size: clamp(2.5rem, 5vw, 4.5rem); letter-spacing: -1px; }
+        h2 { font-size: clamp(2rem, 4vw, 2.75rem); letter-spacing: -0.5px; }
+        h3 { font-size: clamp(1.25rem, 3vw, 1.5rem); }
+        p { font-size: clamp(0.95rem, 2vw, 1.05rem); }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        ul { list-style: none; }
+        img { max-width: 100%; display: block; }
+
+        /* Scroll Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* -----------------------------------------------------------
+           2. UTILITIES & COMPONENTS
+           ----------------------------------------------------------- */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--primary);
+            color: var(--bg-body);
+            font-family: var(--font-head);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 2px solid var(--primary);
+            border-radius: 2px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 0.9rem;
+        }
+
+        .btn:hover, .btn:focus {
+            background-color: transparent;
+            color: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+            padding: 8px 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            border-radius: 2px;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: var(--bg-body);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: clamp(3rem, 5vw, 5rem);
+        }
+
+        .section-title span {
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--accent);
+            margin: 1rem auto 0;
+            border-radius: 2px;
+        }
+
+        section {
+            padding: clamp(80px, 8vw, 100px) 0;
+        }
+
+        .bg-alt {
+            background-color: var(--bg-card);
+        }
+
+        /* Specific fix for light mode alternation to make it visible */
+        body:not(.dark-mode) .bg-alt {
+            background-color: #ffffff;
+            border-top: 1px solid #edf2f7;
+            border-bottom: 1px solid #edf2f7;
+        }
+
+        /* -----------------------------------------------------------
+           3. HEADER & NAV
+           ----------------------------------------------------------- */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: var(--bg-nav);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            transition: var(--transition);
+            height: var(--nav-height);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+
+        .logo {
+            font-family: var(--font-head);
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            height: 100%;
+            color: var(--primary);
+        }
+        
+        .logo-img {
+            max-height: 36px;
+            width: auto;
+            border-radius: 50%;
+        }
+
+        .logo-fallback {
+            display: none;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            font-weight: 600;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .nav-links a:not(.btn-outline)::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after, .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--primary);
+        }
+        
+        .hamburger { display: none; cursor: pointer; padding: 10px; }
+        .bar {
+            display: block; width: 22px; height: 2px; margin: 4px auto;
+            transition: var(--transition); background-color: var(--primary);
+        }
+
+        /* -----------------------------------------------------------
+           4. HERO SECTION
+           ----------------------------------------------------------- */
+        .hero {
+            height: 100vh;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=2074&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding-top: var(--nav-height);
+        }
+        
+        @media (hover: none) { .hero { background-attachment: scroll; } }
+
+        .hero-content h1 {
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #ffffff; 
+            text-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .hero-content p {
+            color: #e2e8f0; 
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 300;
+            font-size: 1.1rem;
+        }
+
+        .hero .btn {
+            background-color: #ffffff;
+            color: #121212;
+            border-color: #ffffff;
+            padding: 15px 40px;
+        }
+        .hero .btn:hover {
+            background-color: transparent;
+            color: #ffffff;
+        }
+
+        /* -----------------------------------------------------------
+           5. BRANDS BAR
+           ----------------------------------------------------------- */
+        .brand-bar {
+            background-color: var(--bg-card);
+            padding: 30px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .brand-grid {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            opacity: 0.6;
+        }
+        .brand-item {
+            font-family: var(--font-head);
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            color: var(--text-muted);
+        }
+
+        /* -----------------------------------------------------------
+           6. SERVICES & PRICING
+           ----------------------------------------------------------- */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background-color: var(--bg-card);
+            padding: 3rem 2rem;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+            border-radius: var(--border-radius);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 4px;
+            background-color: var(--accent);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .service-card:hover::before { transform: scaleX(1); }
+
+        .service-icon {
+            font-size: 3rem;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Detailed Pricing Table */
+        .pricing-section {
+            margin-top: 5rem;
+        }
+        
+        .pricing-table {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        
+        .pricing-row {
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            padding: 1.5rem 0;
+            align-items: center;
+        }
+        
+        .pricing-row:last-child { border-bottom: none; }
+        
+        .pricing-item h4 { margin-bottom: 0.25rem; font-size: 1.1rem; }
+        .pricing-item p { font-size: 0.9rem; color: var(--text-muted); }
+        .pricing-cost { font-weight: 700; font-size: 1.2rem; color: var(--primary); }
+
+        /* -----------------------------------------------------------
+           7. ABOUT
+           ----------------------------------------------------------- */
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            flex-direction: column; 
+        }
+        @media (min-width: 900px) { .about-content { flex-direction: row; } }
+
+        .about-text { flex: 1; }
+        .about-img {
+            flex: 1;
+            width: 100%;
+            height: 400px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+        .about-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+        .about-img:hover img { transform: scale(1.05); }
+
+        .stats-container { margin-top: 2.5rem; display: flex; gap: 3rem; border-top: 1px solid var(--border-color); padding-top: 2rem; }
+
+        /* -----------------------------------------------------------
+           8. GALLERY
+           ----------------------------------------------------------- */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .gallery-item {
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            box-shadow: var(--shadow);
+        }
+        
+        .gallery-item img {
+            width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        .gallery-item:hover img { transform: scale(1.1); }
+        
+        .gallery-overlay {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.4);
+            display: flex; justify-content: center; align-items: center;
+            opacity: 0; transition: opacity 0.3s;
+        }
+        
+        .gallery-item:hover .gallery-overlay { opacity: 1; }
+        
+        .gallery-caption {
+            color: #fff; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;
+            border: 1px solid #fff; padding: 10px 20px;
+        }
+
+        /* -----------------------------------------------------------
+           9. TEAM
+           ----------------------------------------------------------- */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .team-card {
+            background: var(--bg-card);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        .team-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); }
+        
+        .team-img { height: 350px; overflow: hidden; }
+        .team-img img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); filter: grayscale(20%); }
+        .team-card:hover .team-img img { transform: scale(1.05); filter: grayscale(0%); }
+        
+        .team-info { padding: 1.5rem; text-align: center; }
+        .team-role { display: block; color: var(--accent); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; margin-bottom: 0.5rem; }
+
+        /* -----------------------------------------------------------
+           10. REVIEWS & FAQ
+           ----------------------------------------------------------- */
+        .reviews-container {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            min-height: 280px; 
+            display: grid;
+            grid-template-areas: "stack";
+        }
+
+        .review-card {
+            grid-area: stack;
+            background-color: var(--bg-card);
+            padding: 3rem 2rem;
+            border-left: 4px solid var(--accent);
+            box-shadow: var(--shadow);
+            text-align: center;
+            opacity: 0; visibility: hidden; transform: scale(0.95);
+            transition: opacity 0.8s, transform 0.8s, visibility 0.8s;
+            border-radius: var(--border-radius);
+        }
+        
+        .review-card.active { opacity: 1; visibility: visible; transform: scale(1); z-index: 2; }
+        .stars { color: #d69e2e; margin-bottom: 1rem; font-size: 1.2rem; }
+        .review-text { font-size: 1.1rem; font-style: italic; margin-bottom: 2rem; color: var(--text-muted); }
+
+        /* FAQ Section */
+        .faq-grid { max-width: 800px; margin: 4rem auto 0; }
+        .faq-item { border-bottom: 1px solid var(--border-color); margin-bottom: 1rem; }
+        .faq-question {
+            width: 100%; text-align: left; padding: 1.5rem 0;
+            background: none; border: none; outline: none;
+            font-family: var(--font-head); font-weight: 600; font-size: 1.1rem;
+            color: var(--primary); cursor: pointer;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .faq-question i { transition: transform 0.3s; color: var(--accent); }
+        .faq-question.active i { transform: rotate(180deg); }
+        .faq-answer {
+            max-height: 0; overflow: hidden; transition: max-height 0.3s ease;
+            color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;
+        }
+        .faq-answer p { padding-bottom: 1.5rem; }
+
+        /* -----------------------------------------------------------
+           11. BOOKING
+           ----------------------------------------------------------- */
+        .booking-form {
+            max-width: 800px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            background-color: var(--bg-card);
+            padding: 3rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+        }
+        @media (min-width: 700px) { .booking-form { grid-template-columns: 1fr 1fr; } }
+        .full-width { grid-column: 1 / -1; }
+
+        label { display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 600; color: var(--text-muted); }
+        input, select {
+            width: 100%; padding: 14px; background-color: var(--input-bg);
+            border: 1px solid var(--border-color); color: var(--primary);
+            font-family: var(--font-body); font-size: 1rem; border-radius: 4px;
+            transition: border-color 0.3s;
+        }
+        input:focus, select:focus { outline: none; border-color: var(--accent); }
+
+        /* -----------------------------------------------------------
+           12. FOOTER
+           ----------------------------------------------------------- */
+        footer {
+            background-color: #050505;
+            padding: 80px 0 30px;
+            color: #fff;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 4rem; margin-bottom: 4rem; }
+        .footer-col h4 { margin-bottom: 1.5rem; color: #fff; }
+        .footer-col ul li { margin-bottom: 0.8rem; }
+        .footer-col ul li a, .footer-col ul li span { color: #888; transition: var(--transition); cursor: pointer; }
+        .footer-col ul li a:hover, .footer-col ul li span:hover { color: #fff; padding-left: 5px; }
+
+        .newsletter-form { display: flex; margin-top: 1rem; }
+        .newsletter-form input {
+            padding: 10px; border-radius: 2px 0 0 2px; border: none; background: #222; color: #fff;
+        }
+        .newsletter-form button {
+            padding: 10px 15px; border-radius: 0 2px 2px 0; border: none; background: #fff; color: #000; cursor: pointer; font-weight: 600;
+        }
+
+        .copyright { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.05); color: #666; font-size: 0.9rem; }
+        .dev-link { color: #888; font-weight: 600; transition: color 0.3s; }
+        .dev-link:hover { color: #fff; }
+
+        /* Floating Buttons */
+        .float-btn {
+            position: fixed; width: 50px; height: 50px; background: var(--bg-card); color: var(--primary);
+            border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.25rem;
+            cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.15); z-index: 999;
+            transition: all 0.3s; border: 1px solid var(--border-color);
+        }
+        .float-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+        #theme-toggle { bottom: 25px; left: 25px; }
+        #back-to-top { bottom: 25px; right: 25px; opacity: 0; visibility: hidden; }
+        #back-to-top.visible { opacity: 1; visibility: visible; }
+
+        /* Mobile Nav Override */
+        @media (max-width: 900px) {
+            .hamburger { display: block; z-index: 1001; }
+            .nav-links {
+                position: fixed; top: 0; right: -100%; width: 80%; height: 100vh;
+                background: var(--bg-card); flex-direction: column; justify-content: center;
+                transition: 0.4s ease-in-out; z-index: 1000; box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+            }
+            .nav-links.active { right: 0; }
+            .nav-links a { font-size: 1.5rem; margin: 10px 0; }
+            .hamburger.active .bar:nth-child(2) { opacity: 0; }
+            .hamburger.active .bar:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+            .hamburger.active .bar:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+            
+            .pricing-row { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+            .pricing-cost { align-self: flex-start; }
+        }
+
+        /* -----------------------------------------------------------
+           13. MODALS (POP-UPS)
+           ----------------------------------------------------------- */
+        .modal-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.7); z-index: 2000;
+            display: flex; justify-content: center; align-items: center;
+            opacity: 0; visibility: hidden; transition: all 0.3s ease;
+        }
+        .modal-overlay.active { opacity: 1; visibility: visible; }
+        
+        .modal-content {
+            background: var(--bg-card); width: 90%; max-width: 600px;
+            padding: 2.5rem; border-radius: var(--border-radius);
+            position: relative; box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transform: translateY(20px); transition: transform 0.3s ease;
+            max-height: 85vh; overflow-y: auto;
+        }
+        .modal-overlay.active .modal-content { transform: translateY(0); }
+        
+        .close-modal {
+            position: absolute; top: 15px; right: 20px; font-size: 1.5rem;
+            color: var(--text-muted); cursor: pointer; transition: color 0.3s;
+        }
+        .close-modal:hover { color: var(--accent); }
+
+        /* Cookie Banner */
+        .cookie-banner {
+            position: fixed; bottom: 0; left: 0; width: 100%;
+            background: var(--bg-card); padding: 1rem; border-top: 1px solid var(--border-color);
+            box-shadow: 0 -5px 15px rgba(0,0,0,0.1); z-index: 1500;
+            display: flex; justify-content: center; align-items: center; gap: 2rem;
+            transform: translateY(100%); transition: transform 0.5s ease;
+        }
+        .cookie-banner.active { transform: translateY(0); }
+        @media (max-width: 768px) { .cookie-banner { flex-direction: column; gap: 1rem; text-align: center; } }
+    </style>
+</head>
+<body class="">
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container navbar">
+            <a href="#" class="logo">
+                <img src="portfolio-16.jpg" alt="Prime Cuts Logo" class="logo-img" 
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <span class="logo-fallback">
+                    <i class="ri-scissors-cut-fill"></i>
+                    PRIME CUTS
+                </span>
+            </a>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#booking" class="btn-outline">Book Now</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container hero-content reveal">
+                <h1>Sharp Looks.<br>Classic Experience.</h1>
+                <p>Experience the finest grooming in the city. Traditional techniques, modern style, and a relaxing atmosphere designed for the modern gentleman.</p>
+                <a href="#booking" class="btn">Book Appointment</a>
+            </div>
+        </section>
+
+        <!-- Brand Bar -->
+        <div class="brand-bar">
+            <div class="container brand-grid">
+                <span class="brand-item">Reuzel</span>
+                <span class="brand-item">Layrite</span>
+                <span class="brand-item">Suavecito</span>
+                <span class="brand-item">Uppercut</span>
+                <span class="brand-item">Wahl</span>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <section id="services">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>Our Services</h2>
+                    <span></span>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card reveal">
+                        <div class="service-icon"><i class="ri-scissors-2-line"></i></div>
+                        <h3>The Prime Cut</h3>
+                        <p>Precision haircut tailored to your face shape. Includes wash, scalp massage, and style.</p>
+                        <div class="price">$35</div>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <div class="service-icon"><i class="ri-contrast-drop-line"></i></div>
+                        <h3>Hot Towel Shave</h3>
+                        <p>Classic straight razor shave with hot towel treatment and pre-shave oil.</p>
+                        <div class="price">$30</div>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <div class="service-icon"><i class="ri-user-star-line"></i></div>
+                        <h3>Beard Sculpting</h3>
+                        <p>Detailed beard trimming, lining with a razor, and premium oil treatment.</p>
+                        <div class="price">$25</div>
+                    </article>
+                </div>
+
+                <!-- Detailed Pricing Table -->
+                <div class="pricing-section reveal">
+                    <div class="section-title">
+                        <h3>Full Menu & Add-Ons</h3>
+                    </div>
+                    <div class="pricing-table">
+                        <div class="pricing-row">
+                            <div class="pricing-item">
+                                <h4>Full Service Combo</h4>
+                                <p>Haircut + Beard Trim + Hot Towel</p>
+                            </div>
+                            <div class="pricing-cost">$60</div>
+                        </div>
+                        <div class="pricing-row">
+                            <div class="pricing-item">
+                                <h4>Line Up / Shape Up</h4>
+                                <p>Crisp edges around hairline and beard</p>
+                            </div>
+                            <div class="pricing-cost">$15</div>
+                        </div>
+                        <div class="pricing-row">
+                            <div class="pricing-item">
+                                <h4>Junior Cut (Under 12)</h4>
+                                <p>Standard cut for the young gentlemen</p>
+                            </div>
+                            <div class="pricing-cost">$25</div>
+                        </div>
+                        <div class="pricing-row">
+                            <div class="pricing-item">
+                                <h4>Senior Cut (65+)</h4>
+                                <p>Discounted rate for our senior citizens</p>
+                            </div>
+                            <div class="pricing-cost">$25</div>
+                        </div>
+                        <div class="pricing-row">
+                            <div class="pricing-item">
+                                <h4>Grey Blending</h4>
+                                <p>Subtle color to reduce grey appearance</p>
+                            </div>
+                            <div class="pricing-cost">$40</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="footer-credit">
-                <p>Website by <a href="https://alectronic-solutions.github.io/" target="_blank">Alectronic Solutions</a></p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="bg-alt">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text reveal">
+                        <div class="section-title" style="text-align: left; margin-bottom: 2rem;">
+                            <h2>About Prime Cuts</h2>
+                            <span style="margin: 0; width: 60px; height: 4px; background-color: var(--accent); display: inline-block;"></span>
+                        </div>
+                        <p>Established in 2023, Prime Cuts Barbershop was born from a desire to bring back the community feel of the classic barbershop while elevating the service standards for the digital age.</p>
+                        <p>We believe a haircut is more than just a routine; it's a ritual. Our shop features a minimalist aesthetic where you can relax, have a conversation, and leave feeling your absolute best.</p>
+                        
+                        <div class="stats-container">
+                            <div>
+                                <h3 style="font-size: 2rem; color: var(--accent);">2.5k+</h3>
+                                <span style="color: var(--text-muted); font-size: 0.9rem;">Happy Clients</span>
+                            </div>
+                            <div>
+                                <h3 style="font-size: 2rem; color: var(--accent);">15+</h3>
+                                <span style="color: var(--text-muted); font-size: 0.9rem;">Years Experience</span>
+                            </div>
+                            <div>
+                                <h3 style="font-size: 2rem; color: var(--accent);">4.9</h3>
+                                <span style="color: var(--text-muted); font-size: 0.9rem;">Google Rating</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-img reveal">
+                        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=2070&auto=format&fit=crop" alt="Barber cutting hair with precision">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>Latest Cuts</h2>
+                    <span></span>
+                </div>
+                <div class="gallery-grid">
+                    <!-- Fade Cut -->
+                    <div class="gallery-item reveal">
+                        <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=600&auto=format&fit=crop" alt="Fade Cut">
+                        <div class="gallery-overlay"><span class="gallery-caption">Skin Fade</span></div>
+                    </div>
+                    <!-- Scissor Cut -->
+                    <div class="gallery-item reveal">
+                        <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?q=80&w=600&auto=format&fit=crop" alt="Scissor Cut">
+                        <div class="gallery-overlay"><span class="gallery-caption">Scissor Cut</span></div>
+                    </div>
+                    <!-- Classic Style -->
+                    <div class="gallery-item reveal">
+                        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?q=80&w=600&auto=format&fit=crop" alt="Classic Pompadour">
+                        <div class="gallery-overlay"><span class="gallery-caption">Classic Style</span></div>
+                    </div>
+                    <!-- Beard Trim -->
+                    <div class="gallery-item reveal">
+                        <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?q=80&w=600&auto=format&fit=crop" alt="Beard Trim">
+                        <div class="gallery-overlay"><span class="gallery-caption">Beard Trim</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="bg-alt">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>Meet The Team</h2>
+                    <span></span>
+                </div>
+                <div class="team-grid">
+                    <div class="team-card reveal">
+                        <div class="team-img">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop" alt="Marcus Reynolds">
+                        </div>
+                        <div class="team-info">
+                            <h3>Marcus Reynolds</h3>
+                            <span class="team-role">Master Barber</span>
+                            <p class="team-bio">12 years expertise in classic cuts and fades.</p>
+                        </div>
+                    </div>
+                    <div class="team-card reveal">
+                        <div class="team-img">
+                            <img src="https://images.unsplash.com/photo-1618077360395-f3068be8e001?q=80&w=800&auto=format&fit=crop" alt="David Chen">
+                        </div>
+                        <div class="team-info">
+                            <h3>David Chen</h3>
+                            <span class="team-role">Senior Stylist</span>
+                            <p class="team-bio">Modern styling and texture specialist.</p>
+                        </div>
+                    </div>
+                    <div class="team-card reveal">
+                        <div class="team-img">
+                            <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?q=80&w=800&auto=format&fit=crop" alt="Sarah Jenkins">
+                        </div>
+                        <div class="team-info">
+                            <h3>Sarah Jenkins</h3>
+                            <span class="team-role">Shave Specialist</span>
+                            <p class="team-bio">Known for the most relaxing hot towel shaves.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews & FAQ Section -->
+        <section id="reviews">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>Client Reviews</h2>
+                    <span></span>
+                </div>
+                
+                <div class="reviews-container reveal">
+                    <div class="review-card active">
+                        <div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+                        <p class="review-text">"Hands down the best barbershop in the city. The vibe is chill and Marcus never misses with the fade."</p>
+                        <div><h5>James Dalton</h5><span style="font-size:0.85rem; color:var(--text-muted)">Regular Client</span></div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+                        <p class="review-text">"The hot towel shave was incredibly relaxing. A true gentlemen's experience."</p>
+                        <div><h5>Michael Ross</h5><span style="font-size:0.85rem; color:var(--text-muted)">New Customer</span></div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-half-fill"></i></div>
+                        <p class="review-text">"Booking online is super easy. Highly recommend David for scissor cuts."</p>
+                        <div><h5>Alex Lee</h5><span style="font-size:0.85rem; color:var(--text-muted)">Monthly Member</span></div>
+                    </div>
+                </div>
+                
+                <!-- FAQ Accordion -->
+                <div class="faq-grid reveal">
+                    <div class="section-title" style="margin-bottom: 2rem;"><h3>Frequently Asked Questions</h3></div>
+                    <div class="faq-item">
+                        <button class="faq-question">Do I need an appointment? <i class="ri-arrow-down-s-line"></i></button>
+                        <div class="faq-answer"><p>Appointments are highly recommended to guarantee your spot, but we do accept walk-ins if a barber is available.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">What is your cancellation policy? <i class="ri-arrow-down-s-line"></i></button>
+                        <div class="faq-answer"><p>We ask for at least 24 hours notice for cancellations. Late cancellations may be subject to a fee of 50% of the service cost.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Is there parking available? <i class="ri-arrow-down-s-line"></i></button>
+                        <div class="faq-answer"><p>Yes, we have a dedicated lot behind the shop and ample street parking available in front.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section id="booking" class="bg-alt">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>Book Your Seat</h2>
+                    <span></span>
+                </div>
+
+                <form class="booking-form reveal" onsubmit="event.preventDefault(); alert('Appointment Confirmed!');">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="(555) 123-4567" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="service">Select Service</label>
+                        <select id="service" required>
+                            <option value="" disabled selected>Choose a service...</option>
+                            <option value="cut">The Prime Cut ($35)</option>
+                            <option value="shave">Hot Towel Shave ($30)</option>
+                            <option value="beard">Beard Sculpting ($25)</option>
+                            <option value="combo">Full Service Combo ($60)</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="barber">Select Barber (Optional)</label>
+                        <select id="barber">
+                            <option value="any">Any Available Barber</option>
+                            <option value="marcus">Marcus Reynolds</option>
+                            <option value="david">David Chen</option>
+                            <option value="sarah">Sarah Jenkins</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <input type="time" id="time" required>
+                    </div>
+                    <div class="form-group full-width" style="margin-top: 1rem;">
+                        <button type="submit" class="btn" style="width: 100%;">Confirm Appointment</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Prime Cuts</h4>
+                    <p>Premium grooming for the modern gentleman.</p>
+                    <div class="social-links" style="display:flex; gap:1rem; margin-top:1rem;">
+                        <a href="#"><i class="ri-instagram-line" style="font-size:1.5rem"></i></a>
+                        <a href="#"><i class="ri-facebook-fill" style="font-size:1.5rem"></i></a>
+                        <a href="#"><i class="ri-twitter-x-line" style="font-size:1.5rem"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Opening Hours</h4>
+                    <ul>
+                        <li>Mon - Fri: 9:00 AM - 8:00 PM</li>
+                        <li>Saturday: 10:00 AM - 6:00 PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#booking">Book Now</a></li>
+                        <li><span onclick="openModal('careers-modal')">Careers</span></li>
+                        <li><span onclick="openModal('privacy-modal')">Privacy Policy</span></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for updates and promos.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit">GO</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 <a href="https://alectronic-solutions.github.io/" target="_blank" class="dev-link">Alectronic Solutions</a>. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Policy Modals -->
-    <div class="modal policy-modal" id="privacy-modal">
+    <!-- MODALS -->
+
+    <!-- Careers Modal -->
+    <div id="careers-modal" class="modal-overlay">
         <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h3>Privacy Policy</h3>
-            <div class="policy-content">
-                <h4>Information Collection</h4>
-                <p>We collect information when you book appointments, contact us, or use our services.</p>
-                
-                <h4>Information Use</h4>
-                <p>Your information helps us provide and improve our services, process appointments, and communicate with you.</p>
-                
-                <h4>Data Protection</h4>
-                <p>We implement security measures to protect your personal information from unauthorized access.</p>
-                
-                <h4>Contact Information</h4>
-                <p>For privacy concerns, contact us at info@primecuts.com</p>
+            <span class="close-modal" onclick="closeModal('careers-modal')">&times;</span>
+            <div class="section-title">
+                <h2>Join The Team</h2>
+                <span></span>
             </div>
+            <p>At Prime Cuts, we are always looking for talented barbers and stylists to join our growing family. If you have a passion for grooming and a dedication to customer service, we want to meet you.</p>
+            <h4 style="margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--primary);">Current Openings:</h4>
+            <ul style="list-style: disc; margin-left: 1.5rem; margin-bottom: 1.5rem; color: var(--text-muted);">
+                <li>Senior Barber (5+ years experience)</li>
+                <li>Shop Manager</li>
+                <li>Apprentice</li>
+            </ul>
+            <p>To apply, please visit the shop in person or email your portfolio/resume to <strong>careers@primecutsbarber.com</strong>.</p>
         </div>
     </div>
 
-    <div class="modal policy-modal" id="terms-modal">
+    <!-- Privacy Policy Modal -->
+    <div id="privacy-modal" class="modal-overlay">
         <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h3>Terms of Service</h3>
-            <div class="policy-content">
-                <h4>Service Agreement</h4>
-                <p>By using our services, you agree to these terms and conditions.</p>
-                
-                <h4>Appointment Policy</h4>
-                <p>Please arrive 5 minutes before your scheduled time. Late arrivals may result in shortened service.</p>
-                
-                <h4>Cancellation Policy</h4>
-                <p>24-hour notice required for cancellations. Late cancellations may incur a fee.</p>
-                
-                <h4>Service Guarantee</h4>
-                <p>We strive to provide the highest quality service to ensure your satisfaction.</p>
+            <span class="close-modal" onclick="closeModal('privacy-modal')">&times;</span>
+            <div class="section-title">
+                <h2>Privacy Policy</h2>
+                <span></span>
             </div>
+            <p style="font-size: 0.9rem; margin-bottom: 1rem;"><strong>Effective Date: January 1, 2025</strong></p>
+            <p style="font-size: 0.9rem; margin-bottom: 1rem;">Prime Cuts Barbershop ("we", "us", "our") values your privacy. This policy explains how we collect and use your personal information.</p>
+            
+            <h4 style="margin-bottom: 0.5rem; font-size: 1rem;">1. Information We Collect</h4>
+            <p style="font-size: 0.9rem; margin-bottom: 1rem;">We collect information you provide directly to us when you book an appointment, such as your name, phone number, and email address.</p>
+            
+            <h4 style="margin-bottom: 0.5rem; font-size: 1rem;">2. How We Use Information</h4>
+            <p style="font-size: 0.9rem; margin-bottom: 1rem;">We use your information to confirm appointments, send reminders, and improve our services. We do not sell your personal data to third parties.</p>
+            
+            <h4 style="margin-bottom: 0.5rem; font-size: 1rem;">3. Contact Us</h4>
+            <p style="font-size: 0.9rem;">If you have questions about this policy, please contact us at info@primecutsbarber.com.</p>
         </div>
     </div>
 
-    <!-- Update Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <script src="script.js"></script>
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookie-banner">
+        <p style="color: var(--primary); font-size: 0.9rem;">We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
+        <button class="btn-outline" onclick="acceptCookies()">Accept</button>
+    </div>
+
+    <!-- Floating Buttons -->
+    <div id="theme-toggle" class="float-btn" aria-label="Toggle Dark/Light Mode"><i class="ri-moon-line"></i></div>
+    <div id="back-to-top" class="float-btn" aria-label="Back to Top"><i class="ri-arrow-up-line"></i></div>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Preloader
+            const preloader = document.getElementById('preloader');
+            window.addEventListener('load', () => {
+                preloader.style.opacity = '0';
+                preloader.style.visibility = 'hidden';
+            });
+
+            // 2. Scroll Animation (Intersection Observer)
+            const revealElements = document.querySelectorAll('.reveal');
+            const revealOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+            
+            const revealOnScroll = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, revealOptions);
+            
+            revealElements.forEach(el => revealOnScroll.observe(el));
+
+            // 3. Mobile Menu Logic
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            const navLinksItems = document.querySelectorAll('.nav-links a');
+
+            function toggleMenu() {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+                document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : 'auto';
+            }
+
+            hamburger.addEventListener('click', toggleMenu);
+            navLinksItems.forEach(link => link.addEventListener('click', () => {
+                if (navLinks.classList.contains('active')) toggleMenu();
+            }));
+
+            // 4. Sticky Header
+            const header = document.querySelector('header');
+            const updateHeader = () => {
+                if (window.scrollY > 50) {
+                    header.style.backgroundColor = getComputedStyle(document.body).getPropertyValue('--bg-nav');
+                    header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+                } else {
+                    header.style.backgroundColor = getComputedStyle(document.body).getPropertyValue('--bg-nav');
+                    header.style.boxShadow = 'none';
+                }
+            };
+            window.addEventListener('scroll', updateHeader);
+
+            // 5. Theme Toggle
+            const themeBtn = document.getElementById('theme-toggle');
+            const icon = themeBtn.querySelector('i');
+            const body = document.body;
+
+            if (localStorage.getItem('theme') === 'dark') {
+                body.classList.add('dark-mode');
+                icon.className = 'ri-sun-line';
+            }
+
+            themeBtn.addEventListener('click', () => {
+                body.classList.toggle('dark-mode');
+                const isDark = body.classList.contains('dark-mode');
+                icon.className = isDark ? 'ri-sun-line' : 'ri-moon-line';
+                localStorage.setItem('theme', isDark ? 'dark' : 'light');
+                updateHeader();
+            });
+
+            // 6. Back to Top
+            const backToTopBtn = document.getElementById('back-to-top');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) backToTopBtn.classList.add('visible');
+                else backToTopBtn.classList.remove('visible');
+            });
+            backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // 7. Review Slider
+            const reviews = document.querySelectorAll('.review-card');
+            let currentReview = 0;
+            
+            setInterval(() => {
+                reviews.forEach(review => review.classList.remove('active'));
+                currentReview = (currentReview + 1) % reviews.length;
+                reviews[currentReview].classList.add('active');
+            }, 5000);
+
+            // 8. FAQ Accordion
+            const faqs = document.querySelectorAll('.faq-question');
+            faqs.forEach(faq => {
+                faq.addEventListener('click', () => {
+                    faq.classList.toggle('active');
+                    const answer = faq.nextElementSibling;
+                    if (faq.classList.contains('active')) {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                    } else {
+                        answer.style.maxHeight = 0;
+                    }
+                });
+            });
+
+            // 9. Date Input
+            const dateInput = document.getElementById('date');
+            if (dateInput) dateInput.min = new Date().toISOString().split("T")[0];
+
+            // 10. Cookie Banner Logic
+            const cookieBanner = document.getElementById('cookie-banner');
+            setTimeout(() => {
+                if (!localStorage.getItem('cookiesAccepted')) {
+                    cookieBanner.classList.add('active');
+                }
+            }, 2000);
+        });
+
+        // Global functions for modals & cookies
+        function openModal(id) {
+            document.getElementById(id).classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Close modal when clicking outside content
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal-overlay')) {
+                event.target.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        function acceptCookies() {
+            document.getElementById('cookie-banner').classList.remove('active');
+            localStorage.setItem('cookiesAccepted', 'true');
+        }
+    </script>
 </body>
 </html>
